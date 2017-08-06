@@ -1,0 +1,15 @@
+<% include ../header %>
+
+<h1>Posts</h1>
+<ul>
+  <% for (var i = 0; i < posts.length; i++) { %>
+    <li>
+      <a href="posts/<%= i %>"><%= posts[i].title %></a>
+      <a href="resjson/<%= i %>"> RETURN JSON</a>
+    </li>
+  <% } %>
+</ul>
+
+<a href="/resjson">JSONですべてのデータを返す</a>
+
+<% include ../footer %>
